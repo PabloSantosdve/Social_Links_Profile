@@ -1,0 +1,129 @@
+@font-face {
+	font-family: 'titulo';
+	src: url(../fonts/static/Inter-Bold.ttf); /* Define a fonte personalizada 'titulo' */
+}
+@font-face {
+	font-family: 'text1';
+	src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf); /* Define a fonte personalizada 'text1' */
+}
+@font-face {
+	font-family: 'text2';
+	src: url(../fonts/static/Inter-Regular.ttf); /* Define a fonte personalizada 'text2' */
+}
+@font-face {
+	font-family: 'text3';
+	src: url(../fonts/static/Inter-SemiBold.ttf); /* Define a fonte personalizada 'text3' */
+}
+
+body {
+	background-color: #141414; /* Define a cor de fundo do corpo */
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Define a altura do corpo para ocupar toda a altura da janela */
+    width: 100vw; /* Define a largura do corpo para ocupar toda a largura da janela */
+}
+
+section {
+	background-color: #1f1f1f; /* Define a cor de fundo da seção */
+	width: 30%; /* Define a largura da seção */
+	height: 550px; /* Define a altura da seção */
+	color: white; /* Define a cor do texto */
+	text-align: center; /* Centraliza o texto */
+	display: flex;
+	flex-direction: column;
+	gap: 5px; /* Espaçamento entre os elementos internos */
+	padding: 10px; /* Define o preenchimento interno */
+	border-radius: 20px; /* Define cantos arredondados */
+}
+
+#img {
+	width: 22%; /* Define a largura da imagem */
+	height: 100px; /* Define a altura da imagem */
+	border-radius: 50%; /* Faz a imagem ser circular */
+	margin: auto; /* Centraliza a imagem horizontalmente */
+	margin-top: 20px;
+	margin-bottom: 2px;
+}
+#img img {
+	width: 100%; /* Define a largura da imagem interna */
+	height: 100%; /* Define a altura da imagem interna */
+	border-radius: 50%; /* Mantém a imagem circular */
+}
+
+h1 {
+	font-family: 'titulo', Arial, Helvetica, sans-serif; /* Usa a fonte 'titulo' */
+	margin: 2px;
+}
+
+.location {
+	font-family: 'text1', Arial, Helvetica, sans-serif; /* Usa a fonte 'text1' */
+	color: chartreuse; /* Define a cor do texto */
+	font-size: 18px; /* Define o tamanho da fonte */
+	margin: 2px;
+}
+
+.text {
+	font-family: 'text2', Arial, Helvetica, sans-serif; /* Usa a fonte 'text2' */
+}
+
+.container_social {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 20px; /* Espaçamento entre os elementos internos */
+}
+
+.social_links {
+	background-color: #333333; /* Cor de fundo do link social */
+	width: 80%; /* Define a largura do link social */
+	height: 20px; /* Define a altura do link social */
+	margin: auto; /* Centraliza o link social horizontalmente */
+	padding: 10px; /* Define o preenchimento interno */
+	color: white; /* Define a cor do texto */
+	font-family: 'text3', Arial, Helvetica, sans-serif; /* Usa a fonte 'text3' */
+	border-radius: 10px; /* Define cantos arredondados */
+	transition: all 0.5s; /* Transição suave ao passar o mouse */
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-items: center;
+	justify-content: center;
+}
+
+.social_links:hover {
+	background-color: chartreuse; /* Muda a cor de fundo ao passar o mouse */
+	color: black; /* Muda a cor do texto ao passar o mouse */
+}
+
+a {
+	text-decoration: none; /* Remove sublinhado dos links */
+}
+
+@media (min-width: 320px) and (max-width: 759px) {
+    section {
+        width: 85%; /* Largura da seção para telas pequenas */
+		height: auto; /* Altura automática */
+    }
+
+    .social_links {
+        width: 90%; /* Largura dos links sociais para telas pequenas */
+		height: 30px; /* Altura dos links sociais */
+    }
+}
+
+@media (min-width: 760px) and (max-width: 880px) {
+	section {
+		width: 60%; /* Largura da seção para telas médias */
+		height: auto; /* Altura automática */
+	}
+
+	.social_links {
+		width: 90%; /* Largura dos links sociais para telas médias */
+		height: 35px; /* Altura dos links sociais */
+	}
+}
